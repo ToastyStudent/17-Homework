@@ -140,6 +140,8 @@ In the email pattern, a Character Escape is used here:
 
 To escape a period rather than use it for a Character Class as it otherwise would.
 
+NOTE: The reason that \\ isn't treated as a Character Escape within the bracketed expression is due to the fact that special characters and their effects are nullified within them.
+
 ## Author
 
 This tutorial was written by me, Kane Layng, a student in the Northwestern Full-Stack Development Coding Bootcamp as my 17th homework assignment.
