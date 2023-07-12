@@ -29,7 +29,7 @@ Firstly, before delving into the regex components themselves, important to note 
 
 That of emails is no different, as evidenced below:
 
-<b>/</b>^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$<b>/</b>
+<font color="Red"><b>/</b></font>^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$<font color="Red"><b>/</b></font>
 
 ### Anchors
 
