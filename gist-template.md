@@ -6,7 +6,7 @@ In this tutorial, I will be walking you through the regular expression, or regex
 
 Specifically, I'll break down each of regex components and explain their role in the validation process of an email. 
 
-Hopefully, by the end of this tutorial, you will have an understanding grasp of email validation with regular expressions, allowing you to do so in the futue on your own.
+Hopefully, by the end of this tutorial, you will have an understanding grasp of email validation with regular expressions, allowing you to do so in the future on your own.
 
 To start, here is the Regex Pattern for an Email:
 
@@ -25,11 +25,11 @@ To start, here is the Regex Pattern for an Email:
 
 ## Regex Components
 
-Firstly, before delving into the regex components themselves, important to note is that a regex is considered a literal, so any regex patterns must be wrapped in slash characters (/), i.e there must be a slash on either end of them.
+Firstly, before delving into the regex components themselves, essential to note is that a regex is considered a literal, so any regex patterns must be wrapped in slash characters (/), i.e. there must be a slash on either end of them.
 
 That of emails is no different, as evidenced below:
 
-(NOTE: There are spaces added between the slashes and rest of the pattern for emphasis. These are not actually present in the pattern itself)
+(NOTE: There are spaces added between the slashes and the rest of the pattern for emphasis. These are not actually present in the pattern itself)
 
 <b>/</b> ^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$ <b>/</b>
 
@@ -43,15 +43,15 @@ The $ signifies a string that ends with the characters that precede it.
 
 Both of these anchors can either be followed/preceded by an exact string or a range of possible matches.
 
-In the example of our email regex, the matching strings we will be looking for matches the patterns:
+In the example of our email regex, the matching strings we will be looking for match the patterns:
 
 [a-z0-9_\.-], [\da-z\.-], and [a-z\.]
 
-The various other components are quantifiers which don't fall under the anchor's umbrella and will be addressed below.
+The various other components are quantifiers that don't fall under the anchor's umbrella and will be addressed below.
 
 ### Bracket Expressions
 
-Bracket Expressions refer to patterns inside a set of square brackets ([]), with anything inside of them being a set of characrers we want to match or include. For this reason, Bracket Expressions are also known as the positive character group.
+Bracket Expressions refer to patterns inside a set of square brackets ([]), with anything inside of them being a set of characters we want to match or include. For this reason, Bracket Expressions are also known as the positive character group.
 
 [a-z0-9_\.-], [\da-z\.-], and [a-z\.] are all bracket expressions and can be broken down as followed:
 
@@ -65,7 +65,7 @@ Bracket Expressions refer to patterns inside a set of square brackets ([]), with
 
 [\da-z\.-]
 
-* [\d]: A character class which will be addressed below; for all intents and purposes, it's equivalent to [0-9] which was covered above.
+* [\d]: A character class that will be addressed below; for all intents and purposes, it's equivalent to [0-9] which was covered above.
 
 * [a-z]: See above
 
