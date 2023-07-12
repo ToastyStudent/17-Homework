@@ -59,7 +59,7 @@ Bracket Expressions refer to patterns inside a set of square brackets ([]), with
 
 * "[0-9]": The corresponding string can contain any number between 0–9
 
-* "[_\\.-]" The corresponding string can contain the special characters: underscore (_), backslash (\\), period (.), and hyphen (-)
+* "[\_\\.-]" The corresponding string can contain the special characters: underscore (_), backslash (\\), period (.), and hyphen (-)
 
 * Examples fitting this criteria: "Kane13", "Ka_n3\", "1337."
 
