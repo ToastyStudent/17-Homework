@@ -45,7 +45,7 @@ Both of these anchors can either be followed/preceded by an exact string or a ra
 
 In the example of our email regex, the matching strings we will be looking for match the patterns:
 
-[a-z0-9_\.-], [\da-z\.-], and [a-z\.]
+**[a-z0-9_\.-], [\da-z\.-], and [a-z\.]**
 
 The various other components are quantifiers that don't fall under the anchor's umbrella and will be addressed below.
 
