@@ -58,27 +58,27 @@ Bracket Expressions refer to patterns inside a set of square brackets ([]), with
 
 **[a-z0-9_\.-]**
 
-* [a-z]: The corresponding string can contain any lowercase letter between a–z, but ONLY lowercase letters
+* "[a-z]": The corresponding string can contain any lowercase letter between a–z, but ONLY lowercase letters
 
-* [0-9]: The corresponding string can contain any number between 0–9
+* "[0-9]": The corresponding string can contain any number between 0–9
 
-* [_\.-] The corresponding string can contain the special characters: underscore (_), backslash (\), period (.), and hyphen (-)
+* "[_\.-]" The corresponding string can contain the special characters: underscore (_), backslash (\), period (.), and hyphen (-)
 
 
 **[\da-z\.-]**
 
-* [\d]: A character class that will be addressed below; for all intents and purposes, it's equivalent to [0-9] which was covered above.
+* "[\d]": A character class that will be addressed below; for all intents and purposes, it's equivalent to [0-9] which was covered above.
 
-* [a-z]: See above
+* "[a-z]": See above
 
-* [\.-]: The corresponding string can contain the special characters: backslash (\), period (.), and hyphen (-)
+* "[\.-]": The corresponding string can contain the special characters: backslash (\), period (.), and hyphen (-)
 
 
 **[a-z\.]**
 
-* [a-z] See above
+* "[a-z]": See above
 
-* [\.] The corresponding string can contain the special characters: backslash (\) and period (.)
+* "[\.]": The corresponding string can contain the special characters: backslash (\) and period (.)
 
 
 ### Quantifiers
