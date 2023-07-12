@@ -35,9 +35,9 @@ That of emails is no different, as evidenced below:
 
 Both the $ (dollar sign) and ^ (caret) characters are considered anchors in the context of regex.
 
-The ^ signifies a string that starts with the characters that follow it.
+The ^ is representative of a string that starts with the characters that follow it.
 
-The $ signifies a string that ends with the characters that precede it. 
+The $ is representative of a string that ends with the characters that precede it. 
 
 Both of these anchors can either be followed/preceded by an exact string or a range of possible matches.
 
@@ -61,7 +61,7 @@ Bracket Expressions refer to patterns inside a set of square brackets ([]), with
 
 * "[\_\\.-]" The corresponding string can contain the special characters: underscore (_), backslash (\\), period (.), and hyphen (-)
 
-* Examples fitting this criteria: "Kane13", "Ka_n3\", "1337."
+* Examples fitting these criteria: "Kane13", "Ka_n3\", "1337."
 
 **[\da-z\\.-]**
 
@@ -71,7 +71,7 @@ Bracket Expressions refer to patterns inside a set of square brackets ([]), with
 
 * "[\\.-]": The corresponding string can contain the special characters: backslash (\\), period (.), and hyphen (-)
 
-* Examples fitting this criteria: "gmail", "comcast", "hotmail."
+* Examples fitting these criteria: "gmail", "comcast", "hotmail."
 
 **[a-z\\.]**
 
