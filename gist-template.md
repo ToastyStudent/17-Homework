@@ -132,7 +132,7 @@ Additionally, said bracket expression itself, alongside all of the others, is a 
 
 ### Character Escapes
 
-The backslash (\) escapes, or rather effectively nullifies, a character that, were it not for the backslash, would be interpreted literally. I.e a backslash next to a Square Bracket would tell regex not to begin a bracket expression but look for a Square Bracket character.
+The backslash (\\) escapes, or rather effectively nullifies, a character that, were it not for the backslash, would be interpreted literally. I.e a backslash next to a Square Bracket would tell regex not to begin a bracket expression but look for a Square Bracket character.
 
 In the email pattern, a Character Escape is used here:
 
