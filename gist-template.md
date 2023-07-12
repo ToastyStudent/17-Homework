@@ -63,7 +63,7 @@ Bracket Expressions refer to patterns inside a set of square brackets ([]), with
 
 * Examples fitting this criteria: "Kane13", "Ka_n3\", "1337."
 
-**[\da-z\.-]**
+**[\da-z\\.-]**
 
 * "[\d]": A character class that will be addressed below; for all intents and purposes, it's equivalent to [0-9] which was covered above.
 
