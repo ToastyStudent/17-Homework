@@ -10,7 +10,7 @@ Hopefully, by the end of this tutorial, you will have an understanding grasp of 
 
 To start, here is the Regex Pattern for an Email:
 
-/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+/^([a-z0-9_\.-]+)@([\da-z\.-]+)\\.([a-z\.]{2,6})$/
 
 ## Table of Contents
 
