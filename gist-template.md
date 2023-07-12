@@ -19,8 +19,6 @@ To start, here is the Regex Pattern for an Email:
 - [Quantifiers](#quantifiers)
 - [Grouping Constructs](#grouping-constructs)
 - [Character Classes](#character-classes)
-- [The OR Operator](#the-or-operator)
-- [Flags](#flags)
 - [Character Escapes](#character-escapes)
 
 ## Regex Components
@@ -124,14 +122,31 @@ Examples of the email pattern with Grouping Constructs in mind:
 
 Character Classes within a regex define sets of characters, with any one of said characters being able to occur in an input string to fulfill a match.
 
-Within the context of
+Within the context of the email pattern, the following character class is used:
 
-### The OR Operator
+* \d: As mentioned above, it is equivalent to the bracket expression [0-9], as it matches any Arabic numeral digit;
 
-### Flags
+It appears in the bracket expression: ([\da-z\.-]+).
+
+Additionally, said bracket expression itself, alongside all of the others, is a character class.
 
 ### Character Escapes
 
+The backslash (\) escapes, or rather effectively nullifies, a character that, were it not for the backslahs, would be interpreted literally. I.e a backslash next to a Square Bracket would tell regex not to begin a bracket expression but look for a Square Bracket character.
+
+In the email pattern, a Character Escape is used here:
+
+\.([a-z\.]{2,6})
+
+To escape a period rather than use it for a Character Class as it otherwise would.
+
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+This tutorial was written by me, Kane Layng, a student in the Northwestern Full-Stack Development Coding Bootcamp as my 17th homework assignment.
+
+Thank you for reading it.
+
+If you liked to see more of my work, please check out my Github:
+
+https://github.com/ToastyStudent
+
