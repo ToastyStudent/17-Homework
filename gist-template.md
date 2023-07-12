@@ -63,6 +63,8 @@ Bracket Expressions refer to patterns inside a set of square brackets ([]), with
 
 * [_\.-] The corresponding string can contain the special characters: underscore (_), backslash (\), period (.), and hyphen (-)
 
+* Examples fitting this criteria: "Kane13", "Ka_n3\", "1337."
+
 [\da-z\.-]
 
 * [\d]: A character class which will be addressed below; for all intents and purposes, it's equivalent to [0-9] which was covered above.
@@ -71,20 +73,58 @@ Bracket Expressions refer to patterns inside a set of square brackets ([]), with
 
 * [\.-]: The corresponding string can contain the special characters: backslash (\), period (.), and hyphen (-)
 
+* Examples fitting this criteria: "gmail", "comcast", "hotmail."
+
 [a-z\.]
 
 * [a-z] See above
 
 * [\.] The corresponding string can contain the special characters: backslash (\) and period (.)
 
+* Examples fitting this criteria: "com", "net", "gov"
 
 ### Quantifiers
 
+Qunatifiers are used the limits of the string that either the entire regex or an individual section of the regex's string matches.
+
+Specifically, the Quantifers being used in the email regex:
+
+/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+
+Are as followed:
+
+The Plus Sign (+) and Curly Brackets ({}) which are explained as followed:
+
+* ([a-z0-9_\.-]+): Matches the Pattern in the Bracketed Expression one or more times
+
+* ([\da-z\.-]+): See Above
+
+* ([a-z\.]{2,6}): Matches the pattern in the Bracket Expression from a minimum of 2 times to a maximum of 6 times.
+
+
 ### Grouping Constructs
 
+Grouping Constructs are a means of truncating off different parts of a string via parentheses () into subexpressions so that they are subject to different restrictions.
 
+([a-z0-9_\.-]+), ([\da-z\.-]+), and ([a-z\.]{2,6}) are all subexpressions.
+
+In the primary email pattern:
+
+/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+
+An @ symbol seperates ([a-z0-9_\.-]+) from ([\da-z\.-]+) which is seperated from ([a-z\.]{2,6}) via a period (.).
+
+The backlash attached to said period is a character escape and will be defined below.
+
+Examples of the email pattern with Grouping Constructs in mind:
+
+"k1ayng24@gmail.com", "kan327@comcast.net", "1337@hotmail.gov"
 
 ### Character Classes
+
+Character Classes within a regex define sets of characters, with any one of said characters being able to occur in an input string to fulfill a match.
+
+Within the context of
 
 ### The OR Operator
 
