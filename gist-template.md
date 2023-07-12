@@ -55,7 +55,8 @@ Bracket Expressions refer to patterns inside a set of square brackets ([]), with
 
 [a-z0-9_\.-], [\da-z\.-], and [a-z\.] are all bracket expressions and can be broken down as followed:
 
-[a-z0-9_\.-]
+
+**[a-z0-9_\.-]**
 
 * [a-z]: The corresponding string can contain any lowercase letter between a–z, but ONLY lowercase letters
 
@@ -63,7 +64,8 @@ Bracket Expressions refer to patterns inside a set of square brackets ([]), with
 
 * [_\.-] The corresponding string can contain the special characters: underscore (_), backslash (\), period (.), and hyphen (-)
 
-[\da-z\.-]
+
+**[\da-z\.-]**
 
 * [\d]: A character class that will be addressed below; for all intents and purposes, it's equivalent to [0-9] which was covered above.
 
@@ -71,7 +73,8 @@ Bracket Expressions refer to patterns inside a set of square brackets ([]), with
 
 * [\.-]: The corresponding string can contain the special characters: backslash (\), period (.), and hyphen (-)
 
-[a-z\.]
+
+**[a-z\.]**
 
 * [a-z] See above
 
