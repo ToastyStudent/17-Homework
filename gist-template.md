@@ -152,3 +152,10 @@ If you liked to see more of my work, please check out my Github:
 
 https://github.com/ToastyStudent
 
+## Credits
+
+Additionally, I used this Regex Username Tutorial as a basis for how to construct mine:
+
+https://coding-boot-camp.github.io/full-stack/computer-science/regex-tutorial
+
+
