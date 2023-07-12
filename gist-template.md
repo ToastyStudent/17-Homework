@@ -79,11 +79,11 @@ Bracket Expressions refer to patterns inside a set of square brackets ([]), with
 
 * "[\.]": The corresponding string can contain the special characters: backslash (\) and period (.)
 
-* Examples fitting this criteria: "com", "net", "gov"
+* Examples fitting these criteria: "com", "net", "gov"
 
 ### Quantifiers
 
-Qunatifiers are used the limits of the string that either the entire regex or an individual section of the regex's string matches.
+Quantifiers are used to define the limits of the string that either the entire regex or an individual section of the regex's string matches.
 
 Specifically, the Quantifers being used in the email regex:
 
@@ -132,7 +132,7 @@ Additionally, said bracket expression itself, alongside all of the others, is a 
 
 ### Character Escapes
 
-The backslash (\) escapes, or rather effectively nullifies, a character that, were it not for the backslahs, would be interpreted literally. I.e a backslash next to a Square Bracket would tell regex not to begin a bracket expression but look for a Square Bracket character.
+The backslash (\) escapes, or rather effectively nullifies, a character that, were it not for the backslash, would be interpreted literally. I.e a backslash next to a Square Bracket would tell regex not to begin a bracket expression but look for a Square Bracket character.
 
 In the email pattern, a Character Escape is used here:
 
